@@ -27,6 +27,7 @@ public class book {
         this.isbn = isbn;
 
     }
+
 //  getter  método de acceso
     public  int getId() {
         return  id;
