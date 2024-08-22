@@ -78,11 +78,7 @@ public class Chapter {
 
 
 
-
-    static Chapter chapter = new Chapter("Desaparecidos", 28, (short) 2004);
-
-    Chapter[] mIchapter = new Chapter[0];
-
+    Chapter chapter = new Chapter("El misterio de la casa encantada", 35, (short) 2023);
 
 
     /* menus*/
@@ -122,13 +118,13 @@ public class Chapter {
 
                         switch (opcion1){
                             case 1:
-                                System.out.println("El titulo del capitulo es: " + chapter.getTitle());
+                                System.out.println("El titulo del capitulo es: " + Chapter.getTitle());
                                 break;
                             case 2:
-                                System.out.println("La duracion del capitulo es: " + chapter.getDuration());
+                                System.out.println("La duracion del capitulo es: " + Chapter.getDuration());
                                 break;
                             case 3:
-                                System.out.println("El año del capitulo es: " + chapter.getYear());
+                                System.out.println("El año del capitulo es: " + Chapter.getYear());
                                 break;
                             case 4:
                                 System.out.println("Saliendo del programa...");

@@ -1,8 +1,5 @@
 
-import edu.misena.senaviewer.model.Chapter;
-import edu.misena.senaviewer.model.Book;
-import edu.misena.senaviewer.model.Movie;
-
+import edu.misena.senaviewer.model.*;
 import java.util.Scanner;
 
 public class Main {
@@ -39,12 +36,15 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("estas en Movie");
+                    Movie.menuMovie();
                     break;
                 case 4:
                     System.out.println("estas en Serie");
+                    Serie.menuSerie();
                     break;
                 case 5:
                     System.out.println("estas en Magazine");
+                    Magazine.menuMagazine();
                     break;
                 case 6:
                     System.out.println("estas en Report");
