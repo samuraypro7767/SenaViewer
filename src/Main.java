@@ -1,5 +1,7 @@
 
 import edu.misena.senaviewer.model.Chapter;
+import edu.misena.senaviewer.model.Book;
+import edu.misena.senaviewer.model.Movie;
 
 import java.util.Scanner;
 
@@ -9,7 +11,7 @@ public class Main {
 
         int opcion;
 
-        do{
+        do {
             String message = "\n\n!Bienvenido a SenaViewed¡\n\n";
 
             message += "1. Book\n";
@@ -26,8 +28,10 @@ public class Main {
             System.out.println("Elige tu Menu: ");
             opcion = scanner.nextInt();
 
-            switch (opcion){
-                case 1: System.out.println("estas en Book");
+            switch (opcion) {
+                case 1:
+                    System.out.println("estas en Book");
+                    Book.menuBook();
                     break;
                 case 2:
                     System.out.println("estas en Chapter");
@@ -58,6 +62,8 @@ public class Main {
             }
 
 
-        }while(opcion !=8);
+        } while (opcion != 8);
     }
 }
+
+

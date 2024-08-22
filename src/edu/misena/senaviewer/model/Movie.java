@@ -25,6 +25,9 @@ public class Movie {
         return id;
     }
 
+    public static void menuMovie() {
+    }
+
     public void setId(int id) {
         this.id = id;
     }

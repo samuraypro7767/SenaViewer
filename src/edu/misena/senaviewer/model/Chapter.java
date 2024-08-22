@@ -100,7 +100,7 @@ public class Chapter {
 
             System.out.println(message);
 
-            System.out.println("Elige tu Menu: ");
+            System.out.println("Elige una opcion: ");
             opcion = scanner.nextInt();
 
             switch (opcion){
