@@ -6,15 +6,15 @@ import java.util.List;
 
 public class book {
 
-    int id;
-    String title;
+    static int id;
+    static String title;
 
-    String edititionDate;
-    String editorial;
-    String[] authors ;
-    int isbn;
-    boolean readed;
-    int timeReaded;
+    static String edititionDate;
+    static String editorial;
+    static String[] authors ;
+    static int isbn;
+    static boolean readed;
+    static int timeReaded;
 
     public book(String title,
                 String edititionDate,
@@ -29,7 +29,7 @@ public class book {
     }
 
 //  getter  método de acceso
-    public  int getId() {
+    public static int getId() {
         return  id;
     }
 
@@ -39,7 +39,7 @@ public class book {
     }
 
 
-    public String getTitle() {
+    public static String getTitle() {
         return  title;
     }
     public  void setTitle(String title) {
@@ -47,7 +47,7 @@ public class book {
     }
 
 
-    public String getEdititionDate() {
+    public static String getEdititionDate() {
         return  edititionDate;
     }
     public  void setEdititionDate(String edititionDate) {
@@ -55,7 +55,7 @@ public class book {
     }
 
 
-    public String getEditorial() {
+    public static String getEditorial() {
         return  editorial;
     }
     public  void setEditorial(String editorial) {
@@ -63,7 +63,7 @@ public class book {
     }
 
 
-    public String[] getAuthors() {
+    public static String[] getAuthors() {
         return  authors;
     }
 
@@ -76,7 +76,7 @@ public class book {
     }
 
 
-    public int getIsbn() {
+    public static int getIsbn() {
         return  isbn;
     }
     public  void setIsbn(int isbn) {
@@ -84,7 +84,7 @@ public class book {
     }
 
 
-    public boolean isReaded() {
+    public static boolean getReaded() {
         return readed;
     }
     public void setReaded(boolean readed) {
@@ -92,7 +92,7 @@ public class book {
     }
 
 
-    public int getTimeReaded() {
+    public static int getTimeReaded() {
         return timeReaded;
     }
     public void setTimeReaded(int timeReaded) {

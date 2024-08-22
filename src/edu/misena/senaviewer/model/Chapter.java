@@ -1,17 +1,16 @@
 package edu.misena.senaviewer.model;
-
 import java.util.Scanner;
 
 public class Chapter {
     static int id;
     static String title;
 
-    int duration;
-    short year;
-    boolean viewed;
+    static int duration;
+    static short year;
+    static boolean viewed;
 
-    int timeViewed;
-    int sessionNumber;
+    static int timeViewed;
+    static int sessionNumber;
 
     public Chapter (String title,int duration,short year){
         this.title = title;
@@ -19,9 +18,9 @@ public class Chapter {
         this.year = year;
     }
 
-    static Chapter chapter = new Chapter("El cahvo del 8", 20, (short) 2005);
 
-    public int getId(){
+
+    public static int getId(){
         return id;
     }
 
@@ -37,7 +36,7 @@ public class Chapter {
         this.title = title;
     }
 
-    public int getDuration(){
+    public static int getDuration(){
         return duration;
     }
 
@@ -45,7 +44,7 @@ public class Chapter {
         this.duration = duration;
     }
 
-    public short getYear(){
+    public static short getYear(){
         return year;
     }
 
@@ -53,7 +52,7 @@ public class Chapter {
         this.year = year;
     }
 
-    public boolean getViewed (){
+    public static boolean getViewed (){
         return viewed;
     }
 
@@ -61,7 +60,7 @@ public class Chapter {
         this.viewed = viewed;
     }
 
-    public int getTimeViewed() {
+    public static int getTimeViewed() {
         return timeViewed;
     }
 
@@ -69,7 +68,7 @@ public class Chapter {
         this.timeViewed = timeViewed;
     }
 
-    public int getSessionNumber() {
+    public static  int getSessionNumber() {
         return sessionNumber;
     }
 
@@ -77,13 +76,23 @@ public class Chapter {
         this.sessionNumber = sessionNumber;
     }
 
+
+
+
+    static Chapter chapter = new Chapter("Desaparecidos", 28, (short) 2004);
+
+    Chapter[] mIchapter = new Chapter[0];
+
+
+
+    /* menus*/
     public static void menuChapter(){
         Scanner scanner = new Scanner(System.in);
 
         int opcion;
 
         do{
-            String message = "\n\n!Bienvenido al menu de Chapter¡\n\n";
+            String message = "\n\n!Menu de Chapter¡\n\n";
 
             message += "1. Ver informacion\n";
             message += "2. Actualizar informacion\n";
@@ -99,7 +108,7 @@ public class Chapter {
                     int opcion1;
 
                     do{
-                        String message1 = "\n\n!Bienvenido a la vista de Chapter¡\n\n";
+                        String message1 = "\n\n ¿Que vas a consultar de Chapter?\n\n";
 
                         message1 += "1. Ver titulo del capitulo\n";
                         message1 += "2. Ver duracuion del capitulo\n";
@@ -135,15 +144,15 @@ public class Chapter {
                     int opcion2;
 
                     do{
-                        String message2 = "\n\n!Bienvenido al Setter de Chapter¡\n\n";
+                        String message2 = "\n\n Actualizaciones de Chapter\n\n";
 
-                        message2 += "1. id\n";
-                        message2 += "2. title\n";
-                        message2 += "3. duration\n";
-                        message2 += "4. year\n";
-                        message2 += "5. viewed\n";
-                        message2 += "6. timeViewed\n";
-                        message2 += "7. sessionNumber\n";
+                        message2 += "1. Actualizar id\n";
+                        message2 += "2. Actualizar title\n";
+                        message2 += "3. Actualizar duration\n";
+                        message2 += "4. Actualizar year\n";
+                        message2 += "5. Actualizar viewed\n";
+                        message2 += "6. Actualizar timeViewed\n";
+                        message2 += "7. Actualizar sessionNumber\n";
                         message2 += "8. Salir...\n\n";
 
                         System.out.println(message2);

@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class Magazine {
 
-    int id;
-    String title;
-    Date editionDate;
-    String editorial;
-    String[] authors;
+    static int id;
+    static String title;
+    static Date editionDate;
+    static String editorial;
+    static String[] authors;
 
     public Magazine(String title,Date edititionDate,String editorial){
         this.title = title;
@@ -16,7 +16,7 @@ public class Magazine {
         this.editorial = editorial;
     }
 
-    public int getId() {
+    public static int getId() {
         return id;
     }
 
@@ -24,7 +24,7 @@ public class Magazine {
         this.id = id;
     }
 
-    public String getTitle() {
+    public static String getTitle() {
         return title;
     }
 
@@ -32,7 +32,7 @@ public class Magazine {
         this.title = title;
     }
 
-    public Date getEditionDate() {
+    public static Date getEditionDate() {
         return editionDate;
     }
 
@@ -40,7 +40,7 @@ public class Magazine {
         this.editionDate = editionDate;
     }
 
-    public String getEditorial() {
+    public static String getEditorial() {
         return editorial;
     }
 
@@ -48,7 +48,7 @@ public class Magazine {
         this.editorial = editorial;
     }
 
-    public String[] getAuthors() {
+    public static String[] getAuthors() {
         return authors;
     }
 

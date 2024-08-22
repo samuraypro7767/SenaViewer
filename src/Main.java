@@ -17,7 +17,9 @@ public class Main {
             message += "3. Movie\n";
             message += "4. Serie\n";
             message += "5. Magazine\n";
-            message += "6. Salir...\n\n";
+            message += "6. Report\n";
+            message += "7. ReportToday\n";
+            message += "8. Salir...\n";
 
             System.out.println(message);
 
@@ -25,18 +27,28 @@ public class Main {
             opcion = scanner.nextInt();
 
             switch (opcion){
-                case 1:
+                case 1: System.out.println("estas en Book");
                     break;
                 case 2:
+                    System.out.println("estas en Chapter");
                     Chapter.menuChapter();
                     break;
                 case 3:
+                    System.out.println("estas en Movie");
                     break;
                 case 4:
+                    System.out.println("estas en Serie");
                     break;
                 case 5:
+                    System.out.println("estas en Magazine");
                     break;
                 case 6:
+                    System.out.println("estas en Report");
+                    break;
+                case 7:
+                    System.out.println("estas en ReportToday");
+                    break;
+                case 8:
                     System.out.println("Saliendo del programa...");
                     break;
                 default:
@@ -46,6 +58,6 @@ public class Main {
             }
 
 
-        }while(opcion !=6);
+        }while(opcion !=8);
     }
 }

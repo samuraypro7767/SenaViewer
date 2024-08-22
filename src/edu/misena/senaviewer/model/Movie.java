@@ -2,16 +2,16 @@ package edu.misena.senaviewer.model;
 
 public class Movie {
 
-    int id;
-    String title;
+    static int id;
+    static String title;
 
-    String gender;
-    String creator;
-    int duration;
-    short year;
+    static String gender;
+    static String creator;
+    static int duration;
+    static short year;
 
-    boolean viewed;
-    int timeViewed;
+    static boolean viewed;
+    static int timeViewed;
 
     public Movie(String title,String gender,String creator,int duration,short year){
         this.title = title;
@@ -21,7 +21,7 @@ public class Movie {
         this.year = year;
     }
 
-    public int getId() {
+    public static int getId() {
         return id;
     }
 
@@ -29,7 +29,7 @@ public class Movie {
         this.id = id;
     }
 
-    public String getTitle() {
+    public static String getTitle() {
         return title;
     }
 
@@ -37,7 +37,7 @@ public class Movie {
         this.title = title;
     }
 
-    public String getGender() {
+    public static String getGender() {
         return gender;
     }
 
@@ -45,7 +45,7 @@ public class Movie {
         this.gender = gender;
     }
 
-    public String getCreator() {
+    public static String getCreator() {
         return creator;
     }
 
@@ -53,7 +53,7 @@ public class Movie {
         this.creator = creator;
     }
 
-    public int getDuration() {
+    public static int getDuration() {
         return duration;
     }
 
@@ -61,7 +61,7 @@ public class Movie {
         this.duration = duration;
     }
 
-    public short getYear() {
+    public static short getYear() {
         return year;
     }
 
@@ -69,7 +69,7 @@ public class Movie {
         this.year = year;
     }
 
-    public boolean getViewed() {
+    public static boolean getViewed() {
         return viewed;
     }
 
@@ -77,7 +77,7 @@ public class Movie {
         this.viewed = viewed;
     }
 
-    public int getTimeViewed() {
+    public static int getTimeViewed() {
         return timeViewed;
     }
 

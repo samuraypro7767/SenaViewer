@@ -2,17 +2,17 @@ package edu.misena.senaviewer.model;
 
 public class Serie {
 
-    int id;
-    String title;
+    static int id;
+    static String title;
 
-    String gender;
-    String creator;
-    int duration;
-    short year;
+    static String gender;
+    static String creator;
+    static int duration;
+    static short year;
 
-    boolean viewed;
-    int timeViewed;
-    int sessionQuantity;
+    static boolean viewed;
+    static int timeViewed;
+    static int sessionQuantity;
 
     public Serie( String title,String gender,int duration){
         this.title = title;
@@ -20,7 +20,7 @@ public class Serie {
         this.duration = duration;
     }
 
-    public int getId() {
+    public static int getId() {
         return id;
     }
 
@@ -28,7 +28,7 @@ public class Serie {
         this.id = id;
     }
 
-    public String getTitle() {
+    public static String getTitle() {
         return title;
     }
 
@@ -36,7 +36,7 @@ public class Serie {
         this.title = title;
     }
 
-    public String getGender() {
+    public static String getGender() {
         return gender;
     }
 
@@ -44,7 +44,7 @@ public class Serie {
         this.gender = gender;
     }
 
-    public String getCreator() {
+    public static String getCreator() {
         return creator;
     }
 
@@ -52,7 +52,7 @@ public class Serie {
         this.creator = creator;
     }
 
-    public int getDuration() {
+    public static int getDuration() {
         return duration;
     }
 
@@ -60,7 +60,7 @@ public class Serie {
         this.duration = duration;
     }
 
-    public short getYear() {
+    public static short getYear() {
         return year;
     }
 
@@ -68,7 +68,7 @@ public class Serie {
         this.year = year;
     }
 
-    public boolean getViewed() {
+    public static boolean getViewed() {
         return viewed;
     }
 
@@ -76,7 +76,7 @@ public class Serie {
         this.viewed = viewed;
     }
 
-    public int getTimeViewed() {
+    public static int getTimeViewed() {
         return timeViewed;
     }
 
@@ -84,7 +84,7 @@ public class Serie {
         this.timeViewed = timeViewed;
     }
 
-    public int getSessionQuantity() {
+    public static int getSessionQuantity() {
         return sessionQuantity;
     }
 
