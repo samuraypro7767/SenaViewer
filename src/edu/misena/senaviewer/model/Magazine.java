@@ -3,65 +3,42 @@ package edu.misena.senaviewer.model;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Magazine {
+public class Magazine extends Publication {
 
     int id;
-    String title;
-    String editionDate;
-    String editorial;
-    String[] authors;
+
+
 
     public Magazine(String title,String edititionDate,String editorial){
-        this.title = title;
-        this.editionDate = edititionDate;
-        this.editorial = editorial;
+      super(title,edititionDate,editorial);
     }
-
 
 
     public int getId() {
         return id;
     }
 
+    public static Magazine getMagazine() {
+        return magazine;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public static void setMagazine(Magazine magazine) {
+        Magazine.magazine = magazine;
     }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getEditionDate() {
-        return editionDate;
-    }
-
-    public void setEditionDate(String editionDate) {
-        this.editionDate = editionDate;
-    }
-
-    public String getEditorial() {
-        return editorial;
-    }
-
-    public void setEditorial(String editorial) {
-        this.editorial = editorial;
-    }
-
-    public String[] getAuthors() {
-        return authors;
-    }
-
-    public void setAuthors(String[] authors) {
-        this.authors = authors;
-    }
-
 
     static Magazine magazine = new Magazine("Innovations Today", "2024-08-15", "Anna Lee");
 
+    @Override
+    public String toString() {
+        return "Magazine{" +
+                "id=" + id +
+                ", " + super.toString() +
+                '}';
+    }
     /* menus */
 
     public static void menuMagazine(){
@@ -103,7 +80,7 @@ public class Magazine {
                                 System.out.println("El titulo de la revista es: " + magazine.getTitle());
                                 break;
                             case 2:
-                                System.out.println("La fecha de la revista es: " + magazine.getEditionDate());
+                                System.out.println("La fecha de la revista es: " );
                                 break;
                             case 3:
                                 System.out.println("La editorial de la revista es: " + magazine.getEditorial());
@@ -163,4 +140,5 @@ public class Magazine {
         }while(opcion !=3);
 
     }
+
 }

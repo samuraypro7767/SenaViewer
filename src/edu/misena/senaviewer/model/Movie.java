@@ -28,6 +28,13 @@ public class Movie extends Film {
 
     static Movie movie = new Movie("Deadpool", "Accion", " Tim Miller", 108, (short) 2024);
 
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "timeViewed=" + timeViewed +
+                ", " + super.toString() +
+                '}';
+    }
     /* menu*/
 
     public static void menuMovie(){

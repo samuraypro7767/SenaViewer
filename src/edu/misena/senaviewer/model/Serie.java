@@ -37,6 +37,15 @@ public class Serie extends Film {
 
     static Serie serie = new Serie("Avatar: la leyenda de Aang", "Accion", 110);
 
+    @Override
+    public String toString() {
+        return "Serie{" +
+                "timeViewed=" + timeViewed +
+                ", sessionQuantity=" + sessionQuantity +
+                ", " + super.toString() +
+                '}';
+    }
+
     /* menu */
     public static void menuSerie(){
         Scanner scanner = new Scanner(System.in);
