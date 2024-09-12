@@ -62,7 +62,7 @@ public class Movie extends Film {
 
         } while (opcion != 3);
 
-        scanner.close(); // Cerrar el scanner al final
+        scanner.close();
     }
 
     private static void verInformacionMovie(Movie movie) {

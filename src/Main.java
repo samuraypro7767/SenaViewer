@@ -52,7 +52,7 @@ public class Main {
 
         } while (opcion != 8);
 
-        scanner.close(); // Cerrar el Scanner al final
+        scanner.close();
     }
 
     private static void imprimirMenu() {

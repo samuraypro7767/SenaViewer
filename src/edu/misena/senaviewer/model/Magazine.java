@@ -46,7 +46,7 @@ public class Magazine extends Publication {
 
             System.out.println("Elige tu opción: ");
             opcion = scanner.nextInt();
-            scanner.nextLine(); // Consumir el salto de línea
+            scanner.nextLine();
 
             switch (opcion) {
                 case 1:
@@ -65,7 +65,7 @@ public class Magazine extends Publication {
 
         } while (opcion != 3);
 
-        scanner.close(); // Cerrar el scanner al final
+        scanner.close();
     }
 
     private static void verInformacionMagazine(Scanner scanner, Magazine magazine) {

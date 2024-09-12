@@ -10,7 +10,7 @@ public class Serie extends Film {
     public Serie(String title, String genre, int duration, int sessionQuantity) {
         super(title, genre, duration);
         this.sessionQuantity = sessionQuantity;
-        this.timeViewed = 0; // Inicializar timeViewed
+        this.timeViewed = 0;
     }
 
 
@@ -43,7 +43,7 @@ public class Serie extends Film {
     public static void menuSerie() {
         Scanner scanner = new Scanner(System.in);
 
-        // Crear una serie de ejemplo
+
         Serie serie = new Serie("Avatar: la leyenda de Aang", "Acción", 110, 3);
 
         int opcion;
