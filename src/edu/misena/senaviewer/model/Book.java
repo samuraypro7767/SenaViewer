@@ -9,7 +9,7 @@ public class Book extends Publication {
     private boolean readed;
     private int timeReaded;
 
-    // Constructor
+
     public Book(String title, String edititionDate, String editorial, int isbn) {
         super(title, edititionDate, editorial);
         this.isbn = isbn;
@@ -17,7 +17,7 @@ public class Book extends Publication {
         this.timeReaded = 0;
     }
 
-    // Getters y Setters
+
     public int getId() {
         return id;
     }
@@ -97,7 +97,7 @@ public class Book extends Publication {
 
         } while (opcion != 3);
 
-        scanner.close(); // Cerrar el scanner al final
+        scanner.close();
     }
 
     private static void verInformacionLibro(Book book) {
@@ -156,7 +156,7 @@ public class Book extends Publication {
 
             System.out.println("Elige tu opción: ");
             opcion2 = scanner.nextInt();
-            scanner.nextLine(); // Consumir el salto de línea
+            scanner.nextLine();
 
             switch (opcion2) {
                 case 1:

@@ -32,6 +32,13 @@ public class Film {
 
     }
 
+    public Film(String title, String genre, String creator, int duration, short year) {
+     this.title = title;
+     this.genre = genre;
+     this.duration = duration;
+     this.year = year;
+    }
+
 
     public static int getId() {
         return id;
