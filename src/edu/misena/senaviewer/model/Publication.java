@@ -1,5 +1,7 @@
 package edu.misena.senaviewer.model;
 
+import static edu.misena.senaviewer.model.Film.duration;
+
 public class Publication {
      static  String title;
      static  String edititionDate;
@@ -43,5 +45,14 @@ public class Publication {
 
      public static void setAuthors(String[] authors) {
           Publication.authors = authors;
+     }
+     @Override
+     public String toString() {
+          return "Publication{" +
+                  "title='" + title + '\'' +
+                  ", edititionDate='" + edititionDate + '\'' +
+                  ", editorial='" + editorial + '\'' +
+                  ", authors=" + (authors != null ? String.join(", ", authors) : "[]") +
+                  '}';
      }
 }
